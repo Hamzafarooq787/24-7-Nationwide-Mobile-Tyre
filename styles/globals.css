@@ -1,0 +1,228 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+/* ========== THEME VARIABLES ========== */
+:root {
+  /* 🎨 Brand Colors - Red, Yellow & White Theme */
+  --brand-primary: #DC2626;        /* Red - main brand color */
+  --brand-secondary: #FBBF24;       /* Yellow - accent color */
+  --brand-accent: #FFFFFF;          /* White - accent/secondary */
+  
+  /* 🎨 Light Mode (Default) */
+  --background: #FFFFFF;            /* White background */
+  --foreground: #111827;            /* Dark gray text */
+  --card: #FFFFFF;
+  --card-foreground: #111827;
+  --popover: #FFFFFF;
+  --popover-foreground: #111827;
+  
+  /* Using brand colors */
+  --primary: var(--brand-primary);      /* Red */
+  --primary-foreground: #FFFFFF;        /* White text on red */
+  
+  --secondary: var(--brand-secondary);  /* Yellow */
+  --secondary-foreground: #111827;      /* Dark text on yellow */
+  
+  --accent: var(--brand-accent);        /* White */
+  --accent-foreground: #111827;         /* Dark text on white */
+  
+  /* System colors - keeping some neutral */
+  --muted: #F3F4F6;
+  --muted-foreground: #6B7280;
+  --destructive: #DC2626;
+  --destructive-foreground: #FFFFFF;
+  --border: #E5E7EB;
+  --input: #E5E7EB;
+  --ring: #DC2626;                      /* Red ring for focus */
+  
+  /* Charts - using theme colors */
+  --chart-1: #DC2626;                   /* Red */
+  --chart-2: #FBBF24;                   /* Yellow */
+  --chart-3: #FFFFFF;                   /* White */
+  --chart-4: #F87171;                   /* Light red */
+  --chart-5: #FCD34D;                   /* Light yellow */
+  
+  /* UI */
+  --radius: 0.625rem;
+  --sidebar: #FFFFFF;
+  --sidebar-foreground: #111827;
+  --sidebar-primary: #DC2626;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #F3F4F6;
+  --sidebar-accent-foreground: #111827;
+  --sidebar-border: #E5E7EB;
+  --sidebar-ring: #DC2626;
+}
+
+/* ========== DARK MODE ========== */
+.dark {
+  /* 🎨 Dark Mode - Slightly different shades */
+  --brand-primary: #EF4444;        /* Lighter red for dark mode */
+  --brand-secondary: #FCD34D;       /* Light yellow for dark mode */
+  --brand-accent: #F9FAFB;          /* Off-white for dark mode */
+  
+  /* Dark mode system colors */
+  --background: #111827;
+  --foreground: #F9FAFB;
+  --card: #1F2937;
+  --card-foreground: #F9FAFB;
+  --popover: #1F2937;
+  --popover-foreground: #F9FAFB;
+  
+  /* Using brand colors in dark mode */
+  --primary: var(--brand-primary);      /* Lighter red */
+  --primary-foreground: #FFFFFF;
+  
+  --secondary: var(--brand-secondary);  /* Light yellow */
+  --secondary-foreground: #111827;
+  
+  --accent: var(--brand-accent);        /* Off-white */
+  --accent-foreground: #111827;
+  
+  /* Dark mode system colors */
+  --muted: #374151;
+  --muted-foreground: #9CA3AF;
+  --destructive: #EF4444;
+  --destructive-foreground: #FFFFFF;
+  --border: #374151;
+  --input: #374151;
+  --ring: #EF4444;
+  
+  /* Dark mode charts */
+  --chart-1: #EF4444;
+  --chart-2: #FCD34D;
+  --chart-3: #F9FAFB;
+  --chart-4: #F87171;
+  --chart-5: #FDE68A;
+  
+  /* Dark mode UI */
+  --sidebar: #1F2937;
+  --sidebar-foreground: #F9FAFB;
+  --sidebar-primary: #EF4444;
+  --sidebar-primary-foreground: #FFFFFF;
+  --sidebar-accent: #374151;
+  --sidebar-accent-foreground: #F9FAFB;
+  --sidebar-border: #374151;
+  --sidebar-ring: #EF4444;
+}
+
+/* ========== TAILWIND THEME EXTENSION ========== */
+@theme inline {
+  /* Fonts */
+  --font-sans: 'Geist', 'Geist Fallback', system-ui, sans-serif;
+  --font-mono: 'Geist Mono', 'Geist Mono Fallback', monospace;
+  
+  /* Colors - These become Tailwind classes */
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  
+  /* Brand colors available as bg-primary, text-primary etc. */
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  
+  /* Direct brand color access if needed */
+  --color-brand-primary: var(--brand-primary);
+  --color-brand-secondary: var(--brand-secondary);
+  --color-brand-accent: var(--brand-accent);
+  
+  /* Other colors */
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  
+  /* Charts */
+  --color-chart-1: var(--chart-1);
+  --color-chart-2: var(--chart-2);
+  --color-chart-3: var(--chart-3);
+  --color-chart-4: var(--chart-4);
+  --color-chart-5: var(--chart-5);
+  
+  /* Radius */
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  
+  /* Sidebar */
+  --color-sidebar: var(--sidebar);
+  --color-sidebar-foreground: var(--sidebar-foreground);
+  --color-sidebar-primary: var(--sidebar-primary);
+  --color-sidebar-primary-foreground: var(--sidebar-primary-foreground);
+  --color-sidebar-accent: var(--sidebar-accent);
+  --color-sidebar-accent-foreground: var(--sidebar-accent-foreground);
+  --color-sidebar-border: var(--sidebar-border);
+  --color-sidebar-ring: var(--sidebar-ring);
+}
+
+/* ========== BASE STYLES ========== */
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  
+  body {
+    @apply bg-background text-foreground;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+  
+  /* Smooth scrolling */
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  /* Better focus styles */
+  :focus-visible {
+    @apply outline-2 outline-offset-2 outline-ring;
+  }
+  
+  /* Selection styling */
+  ::selection {
+    @apply bg-primary/20 text-primary;
+  }
+}
+
+/* ========== UTILITIES ========== */
+@layer utilities {
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Animation delays */
+  .animation-delay-100 {
+    animation-delay: 100ms;
+  }
+  .animation-delay-200 {
+    animation-delay: 200ms;
+  }
+  .animation-delay-300 {
+    animation-delay: 300ms;
+  }
+  .animation-delay-500 {
+    animation-delay: 500ms;
+  }
+  .animation-delay-700 {
+    animation-delay: 700ms;
+  }
+  .animation-delay-1000 {
+    animation-delay: 1000ms;
+  }
+}
