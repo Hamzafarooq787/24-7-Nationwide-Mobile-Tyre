@@ -113,7 +113,7 @@ export default function Hero() {
             className="flex flex-col sm:flex-row gap-3 sm:gap-4"
           >
             <Link
-              href="tel:+447856978630"
+              href="tel:+447928922369"
               className="bg-secondary text-primary px-6 sm:px-8 py-3.5 rounded-lg font-black text-base sm:text-lg flex items-center justify-center gap-2 hover:bg-secondary/80 transition-all shadow-xl group"
             >
               <motion.span

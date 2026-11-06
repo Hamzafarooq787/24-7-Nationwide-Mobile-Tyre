@@ -144,7 +144,7 @@ export default function CTA() {
                 className="w-full sm:w-auto"
               >
                 <Link
-                  href="tel:+447856978630"
+                  href="tel:+447928922369"
                   className="w-full sm:w-auto flex items-center justify-center gap-3 bg-red-500 text-white px-8 py-4 rounded-xl font-black text-lg hover:bg-red-600 transition-colors shadow-lg group"
                 >
                   <motion.span

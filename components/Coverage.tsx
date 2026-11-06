@@ -176,7 +176,7 @@ export default function Coverage() {
                   Call us with your postcode for instant confirmation. We cover far more than you might expect.
                 </p>
                 <Link
-                  href="tel:+447856978630"
+                  href="tel:+447928922369"
                   className="inline-flex items-center gap-1.5 mt-3 text-yellow-300 text-xs font-bold hover:text-yellow-200 transition-colors"
                 >
                   <motion.span

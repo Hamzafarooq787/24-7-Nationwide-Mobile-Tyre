@@ -4,7 +4,7 @@ import { useState, FormEvent, useRef } from 'react';
 import Link from 'next/link';
 import { motion, useInView } from 'framer-motion';
 
-const WHATSAPP_NUMBER = '447856978630';
+const WHATSAPP_NUMBER = '447928922369';
 
 // Animation variants for icons
 const iconAnimations = {
@@ -95,7 +95,7 @@ export default function ContactForm() {
         <p className="text-sm text-red-400 leading-relaxed">
           For immediate roadside help,{' '}
           <Link
-            href="tel:+447856978630"
+            href="tel:+447928922369"
             className="text-red-500 font-bold hover:text-red-600 transition-colors inline-flex items-center gap-1 group"
           >
             <motion.span

@@ -122,7 +122,7 @@ export default function Footer() {
               whileTap={{ scale: 0.95 }}
             >
               <Link
-                href="tel:+447856978630"
+                href="tel:+447928922369"
                 className="flex items-center gap-2 bg-red-500 text-white font-black text-sm px-5 py-2.5 rounded-lg hover:bg-red-600 transition-colors shadow-md"
               >
                 <motion.span
@@ -234,7 +234,7 @@ export default function Footer() {
               <ul className="space-y-4">
                 <li>
                   <Link
-                    href="tel:+447856978630"
+                    href="tel:+447928922369"
                     className="flex items-start gap-3 group"
                   >
                     <motion.span
@@ -245,7 +245,7 @@ export default function Footer() {
                     </motion.span>
                     <div>
                       <p className="text-red-700 font-bold text-sm group-hover:text-red-500 transition-colors">24/7 Emergency Line</p>
-                      <p className="text-red-400 text-xs">+44 7856 978630</p>
+                      <p className="text-red-400 text-xs">07928 922369</p>
                     </div>
                   </Link>
                 </li>

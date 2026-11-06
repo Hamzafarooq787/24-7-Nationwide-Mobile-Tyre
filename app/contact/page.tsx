@@ -244,7 +244,7 @@ export default function ContactPage() {
               </p>
             </div>
             <Link
-              href="tel:+447856978630"
+              href="tel:+447928922369"
               className="flex items-center justify-center gap-2 bg-red-600 text-white px-5 py-3 rounded-lg font-bold text-sm hover:bg-red-700 transition-colors shrink-0 w-full sm:w-auto group"
             >
               <motion.span

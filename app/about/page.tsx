@@ -112,7 +112,7 @@ export default function AboutPage() {
                     className="flex flex-col sm:flex-row gap-3 sm:gap-4 pt-2"
                   >
                     <Link
-                      href="tel:+447856978630"
+                      href="tel:+447928922369"
                       className="bg-yellow-400 hover:bg-yellow-300 text-red-700 font-bold py-3 px-6 sm:px-8 rounded-lg transition-all flex items-center justify-center gap-2 group"
                     >
                       <motion.span
@@ -360,7 +360,7 @@ export default function AboutPage() {
               </div>
               <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                 <Link
-                  href="tel:+447856978630"
+                  href="tel:+447928922369"
                   className="bg-red-600 text-white text-base font-bold py-3.5 px-7 rounded-xl hover:bg-red-700 transition-colors flex items-center justify-center gap-2 group"
                 >
                   <motion.span

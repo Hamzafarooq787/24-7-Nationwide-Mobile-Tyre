@@ -87,7 +87,7 @@ export default function FloatingButtons() {
         whileTap={{ scale: 0.9 }}
       >
         <Link
-          href="https://wa.me/447856978630"
+          href="https://wa.me/447928922369"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Chat on WhatsApp"
@@ -125,7 +125,7 @@ export default function FloatingButtons() {
         whileTap={{ scale: 0.9 }}
       >
         <Link
-          href="tel:+447856978630"
+          href="tel:+447928922369"
           aria-label="Call us"
           className="w-14 h-14 rounded-full flex items-center justify-center shadow-lg relative overflow-hidden group"
           style={{ backgroundColor: '#DC2626' }} // Red

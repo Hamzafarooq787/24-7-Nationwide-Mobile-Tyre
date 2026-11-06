@@ -216,7 +216,7 @@ export default function HowItWorks() {
             </p>
           </div>
           <Link
-            href="tel:+447856978630"
+            href="tel:+447928922369"
             className="flex items-center gap-2 bg-yellow-400 text-red-700 font-bold text-sm px-6 py-3 rounded-xl hover:bg-yellow-300 transition-all shadow-md whitespace-nowrap group"
           >
             <motion.span
